@@ -3,12 +3,14 @@
  */
 package javabuild;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import model.Employee;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        if (args.length > 0) {
+            Employee.printEmpInfoByID(Integer.parseInt(args[0]));
+        } else {
+            System.out.println("No EmpID passed as argument!");
+        }
     }
 }
