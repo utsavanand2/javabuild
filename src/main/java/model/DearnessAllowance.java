@@ -36,6 +36,9 @@ public class DearnessAllowance {
         switch(designationCode) {
             case "e": da = new DearnessAllowance("e", "Engineer", 20000);
             break;
+
+            case "c": da = new DearnessAllowance("c", "Consultant", 32000);
+            break;
             
             case "k": da = new DearnessAllowance("k", "Clerk", 12000);
             break;
